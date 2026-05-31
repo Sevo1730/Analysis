@@ -16,7 +16,7 @@ export default function TabBar() {
 
   return (
     <div className="w-full">
-      <div className="relative bg-gray-100 rounded-lg px-2 pt-2 flex items-end">
+      <div className="relative bg-gray-100 rounded-lg px-2 py-2 flex items-stretch">
         {tabs.map((tab) => (
           <button
             key={tab.id}
