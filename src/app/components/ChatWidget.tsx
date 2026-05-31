@@ -38,7 +38,7 @@ export default function ChatWidget() {
       const data = await res.json();
       setMessages((prev) => [
         ...prev,
-        { role: "assistant", content: data.reply || "Error occurred." },
+        { role: "assistant", content: data.reply || data.error || "Error occurred." },
       ]);
     } catch {
       setMessages((prev) => [
