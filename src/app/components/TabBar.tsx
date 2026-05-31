@@ -24,7 +24,7 @@ export default function TabBar() {
             className={`
               flex-1 text-xs font-medium py-2 px-3 transition-colors
               ${active === tab.id
-                ? "bg-gray-100 text-gray-900 font-semibold rounded-lg"
+                ? "bg-white text-gray-900 font-semibold rounded-lg"
                 : "bg-transparent text-gray-400 hover:text-gray-600"
               }
             `}
